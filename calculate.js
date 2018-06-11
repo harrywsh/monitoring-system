@@ -151,26 +151,16 @@ function Calc1() {
         counter_col = 0;
         var cells = row.getElementsByClassName("divTableCell");
         for (var cell of cells) {
-            if (counter_row == 1 && counter_col == 2) {
-                cell.innerText = stddegree.toFixed(6);
-            } else if (counter_row == 1 && counter_col == 3) {
+            if (counter_row == 1 && counter_col == 3) {
                 cell.innerText = fitdegree.toFixed(6);
-            } else if (counter_row == 2 && counter_col == 2) {
-                cell.innerText = stds.toFixed(6);
             } else if (counter_row == 2 && counter_col == 3) {
                 cell.innerText = sdegree.toFixed(6);
-            } else if (counter_row == 3 && counter_col == 2) {
-                cell.innerText = s0[6].toFixed(6);
             } else if (counter_row == 3 && counter_col == 3) {
-                cell.innerText = s1[6].toFixed(6);
-            } else if (counter_row == 4 && counter_col == 2) {
-                cell.innerText = s0[8].toFixed(6);
+                cell.innerText = s2[6].toFixed(6);
             } else if (counter_row == 4 && counter_col == 3) {
-                cell.innerText = s1[8].toFixed(6);
-            } else if (counter_row == 5 && counter_col == 2) {
-                cell.innerText = (s0[8] - s0[6]).toFixed(6);
+                cell.innerText = s2[8].toFixed(6);
             } else if (counter_row == 5 && counter_col == 3) {
-                cell.innerText = (s1[8] - s1[6]).toFixed(6);
+                cell.innerText = (s2[8] - s2[6]).toFixed(6);
             }
             counter_col++;
         }
@@ -347,24 +337,14 @@ function Calc2() {
         counter_col = 0;
         var cells = row.getElementsByClassName("divTableCell");
         for (var cell of cells) {
-            if (counter_row == 1 && counter_col == 2) {
-                cell.innerText = stddegree.toFixed(6);
-            } else if (counter_row == 1 && counter_col == 3) {
+            if (counter_row == 1 && counter_col == 3) {
                 cell.innerText = fitdegree.toFixed(6);
-            } else if (counter_row == 2 && counter_col == 2) {
-                cell.innerText = stds.toFixed(6);
             } else if (counter_row == 2 && counter_col == 3) {
                 cell.innerText = sdegree.toFixed(6);
-            } else if (counter_row == 3 && counter_col == 2) {
-                cell.innerText = s0[6].toFixed(6);
             } else if (counter_row == 3 && counter_col == 3) {
                 cell.innerText = s2[6].toFixed(6);
-            } else if (counter_row == 4 && counter_col == 2) {
-                cell.innerText = s0[8].toFixed(6);
             } else if (counter_row == 4 && counter_col == 3) {
                 cell.innerText = s2[8].toFixed(6);
-            } else if (counter_row == 5 && counter_col == 2) {
-                cell.innerText = (s0[8] - s0[6]).toFixed(6);
             } else if (counter_row == 5 && counter_col == 3) {
                 cell.innerText = (s2[8] - s2[6]).toFixed(6);
             }
